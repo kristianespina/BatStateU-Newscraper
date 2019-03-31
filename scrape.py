@@ -42,7 +42,7 @@ def getNews(url):
     return articles
 
 def main():
-    articles = getNews('http://batstate-u.edu.ph/category/news/page/21')
+    articles = getNews('http://batstate-u.edu.ph/category/news/')
     try:
         article_file = pd.read_csv('articles.csv')
     except:
